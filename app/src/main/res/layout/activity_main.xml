@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/teal_200"
+            android:theme="@style/AppTheme.Toolbar" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img"
+            android:layout_marginTop="110dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bara Ilham Bakti Perkasa"
+            android:layout_marginTop="120dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="140dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29 Tahun"
+            android:layout_marginTop="148dp"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="140dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Youtuber"
+            android:layout_marginTop="170dp"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="140dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perjalanan karir"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HALLO"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/teal_200"
+        android:layout_marginBottom="-100dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
